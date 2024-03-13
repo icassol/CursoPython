@@ -1,8 +1,8 @@
-# 7.6 Estilos de codeo
+# Estilos de codeo
 
 ## PEP 8 - La guía de estilo para Python
 
-La comunidad de usuaries de Python ha adoptado una guía de estilo que facilita la lectura del código y la consistencia entre programas de distintos usuaries. Esta guía no es de seguimiento obligatorio, pero es altamente recomendable. El documento completo se denomina PEP 8 y está escrito originalmente en [inglés](https://www.python.org/dev/peps/pep-0008/), aunque hay alguna traducción al [castellano](http://recursospython.com/pep8es.pdf). 
+La comunidad de usuarios de Python ha adoptado una guía de estilo que facilita la lectura del código y la consistencia entre programas de distintos usuarios. Esta guía no es de seguimiento obligatorio, pero es altamente recomendable. El documento completo se denomina PEP 8 y está escrito originalmente en [inglés](https://www.python.org/dev/peps/pep-0008/), aunque hay alguna traducción al [castellano](http://recursospython.com/pep8es.pdf). 
 
 A continuación presentamos un resumen con solo algunas recomendaciones.
 
