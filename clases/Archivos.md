@@ -1,6 +1,6 @@
-# 2.2 Manejo de archivos
+# Manejo de archivos
 
-La mayoría de los programas usa alguna fuente de datos. En esta sección discutimos el acceso a archivos, tema que introducimos en este [video](https://youtu.be/KTCS13-Z8bI). Te dejamos también el [código](./arboles.py) y el [archivo](./arboles.csv) que usamos en el video.
+La mayoría de los programas usa alguna fuente de datos. En esta sección discutimos el acceso a archivos.
 
 ### Archivos de entrada y salida
 
@@ -96,7 +96,7 @@ Estos ejercicios usan el archivo `../Data/camion.csv`.  El archivo contiene una 
 >>>
 ```
 
-### Ejercicio 2.1: Preliminares sobre lectura de archivos
+### Preliminares sobre lectura de archivos
 Primero, tratá de leer el archivo entero de una en una larga cadena:
 
 ```python
@@ -177,7 +177,7 @@ Una vez que estés leyendo un archivo línea a línea, podés hacer otras operac
 
 *Otra observación: usamos `../Data` para acceder a la carpeta "Data" porque ésta se encuentra dentro de la carpeta "ejercicios_python", al igual que la carpeta actual de trabajo, que es "Clase02". Con los dos puntos del inicio del path nos referimos a la carpeta "madre", es decir, a la carpeta que contiene a la actual.*
 
-### Ejercicio 2.2: Lectura de un archivo de datos
+### Lectura de un archivo de datos
 Ahora que sabés leer un archivo, escribamos un programa que haga un cálculo simple con los datos leídos.
 
 Las columnas en `camion.csv` corresponden a un nombre de fruta, una cantidad de cajones cargados en el camión, y un precio de compra por cada cajón de ese grupo. Escribí un programa llamado `costo_camion.py`  que abra el archivo, lea las líneas, y calcule el precio pagado por los cajones cargados en el camión.
@@ -192,8 +192,8 @@ Costo total 47671.15
 
 Acordate de guardar tu archivo en el directorio `Clase02`; vamos a volver a trabajar sobre él.
 
-### Ejercicio 2.3: Precio de la naranja
-El archivo `../Data/precios.csv` contiene una serie de líneas con precios de venta de cajones en el mercado al que va el camión. El archivo se ve así:
+### Precio de la naranja
+El archivo `..precios.csv` contiene una serie de líneas con precios de venta de cajones en el mercado al que va el camión. El archivo se ve así:
 
 ```csv
 "Lima",40.22
@@ -213,23 +213,6 @@ Escribí un código que abra el archivo `../Data/precios.csv`, busque el precio 
 
 El precio de la naranja es:  106.28
 ```
-
-### Ejercicio 2.4: Archivos comprimidos
-¿Que pasaría si quisiéramos leer un archivo comprimido con gzip, por ejemplo? La función primitiva de Python  `open()` no hace esa tarea. Pero hay un módulo de la biblioteca de Python llamado `gzip` que lee archivos comprimidos.
-
-Probalo:
-
-```python
->>> import gzip
->>> with gzip.open('../Data/camion.csv.gz', 'rt') as f:
-        for line in f:
-            print(line, end = '')
-
-... mirá la salida ...
->>>
-```
-
-*Observación: La inclusión del modo  `'rt'` es crítica acá. Si te lo olvidás, vas a estar leyendo cadenas de bytes en lugar de cadenas de caracteres.*
 
 ### Comentario: ¿No deberíamos estar usando Pandas para esto?
 
