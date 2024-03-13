@@ -1,4 +1,4 @@
-# 2.4 Tipos y estructuras de datos
+# Tipos y estructuras de datos
 
 Esta sección introduce dos estructuras de datos elementales: las tuplas y los diccionarios.
 
