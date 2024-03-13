@@ -1,7 +1,5 @@
 # Introducción a la Recursión
 
-Para esta sección y las dos siguientes hay un [video](https://youtu.be/C0o-KuY-BNs) donde introducimos el tema de recursión y vemos algunos ejemplos.
-
 ## La recursión y cómo puede ser que funcione
 
 Estamos acostumbrados a escribir funciones que llaman a otras funciones.
