@@ -1,3 +1,4 @@
+
 #Acerca de este curso
 
 Este curso te proporcionará las bases del lenguaje de programación en python para el manejo y la administración de datos biomédicos. Es uno de los lenguajes de programación más utilizados para la estadística y la ciencia de datos. El presente curso contiene los contenidos esenciales como para poder manipular secuencias y archivos. 
