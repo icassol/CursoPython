@@ -1,6 +1,6 @@
-# 3.4 Contadores del módulo _collections_
+Contadores del módulo _collections_
 
-El módulo `collections` ofrece objetos útiles para manejar datos. En esta sección (y en este [video](https://youtu.be/DoRHWjU3Ews)) introducimos brevemente los contadores, que son solo una de las clases incluidas en este módulo.
+El módulo `collections` ofrece objetos útiles para manejar datos. 
 
 ### Ejemplo: Contar cosas
 
@@ -43,7 +43,7 @@ bash % python3 -i informe.py
 O podés cargarlo en el Spyder y correrlo.
 
 
-### Ejercicio 3.11: Contadores
+### Contadores
 Vamos a usar un contador (objeto `Counter`) para contar cajones de frutas. Probalo:
 
 ```python
