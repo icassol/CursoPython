@@ -1,6 +1,6 @@
-# 3.3 Secuencias
+Secuencias
 
-En esta sección hablamos de secuencias. Te dejamos un [video introductorio](https://youtu.be/e_E-2tFcRwQ) para este tema.
+En esta sección hablamos de secuencias.
 
 ### Tipo de secuencias
 
@@ -266,7 +266,7 @@ d = dict(zip(columnas, valores))
 
 ## Ejercicios
 
-### Ejercicio 3.6: Contar
+### Contar
 Probá algunos ejemplos elementales de conteo:
 
 ```python
@@ -285,7 +285,7 @@ Probá algunos ejemplos elementales de conteo:
 >>>
 ```
 
-### Ejercicio 3.7: Más operaciones con secuencias
+### Más operaciones con secuencias
 Interactivamente experimentá con algunas operaciones de reducción de secuencias.
 
 ```python
@@ -333,7 +333,7 @@ A veces los comandos for, len(), y range() son combinados para recorrer listas:
 
 Sin embargo, Python tiene mejores alternativas para esto. Te recomendamos familiarizarte con ellas y usarlas: por su simpleza producen código más legible y reducen la posibilidad de un bug en el código. Simplemente usá un ciclo `for` normal si querés iterar sobre los elementos de la variable `data`.  Y usá `enumerate()` si necesitás tener el índice por algún motivo.
 
-### Ejercicio 3.8: Un ejemplo práctico de enumerate()
+### Un ejemplo práctico de enumerate()
 Recordá que el archivo  `Data/missing.csv` contiene datos sobre los cajones de un camión, pero tiene algunas filas que faltan. Usando `enumerate()`,
 copiá tu programa `costo_camion.py` a la carpeta de la clase actual, y modificalo de forma que imprima un aviso (warning) cada vez que encuentre una fila incorrecta, indicando el número de fila.
 
@@ -355,7 +355,7 @@ for n_fila, fila in enumerate(filas, start=1):
         print(f'Fila {n_fila}: No pude interpretar: {fila}')
 ```
 
-### Ejercicio 3.9: La función zip()
+### La función zip()
 En el archivo `Data/camion.csv`, la primera línea tiene los encabezados de las columnas. En los códigos anteriores la descartamos.
 
 ```python
@@ -439,7 +439,7 @@ Copiá el programa `informe.py` que escribiste antes (ver [Ejercicio 2.18](../02
 Probá correr el programa `informe.py` sobre el archivo  `Data/fecha_camion.csv`
 y fijate si da la misma salida que antes.
 
-### Ejercicio 3.10: Invertir un diccionario
+### Invertir un diccionario
 Un diccionario es una función que mapea claves en valores. Por ejemplo, un diccionario de precios de cajones de frutas.
 
 ```python
