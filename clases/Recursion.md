@@ -1,4 +1,4 @@
-# 11.2 Intro a la Recursión
+# Introducción a la Recursión
 
 Para esta sección y las dos siguientes hay un [video](https://youtu.be/C0o-KuY-BNs) donde introducimos el tema de recursión y vemos algunos ejemplos.
 
