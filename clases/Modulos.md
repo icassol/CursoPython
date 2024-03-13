@@ -1,4 +1,4 @@
-# 6.4 Módulos
+# Módulos
 
 En esta sección vamos a introducir conceptos que nos permiten crear módulos y trabajar con programas cuyas partes están repartidas en múltiples archivos. 
 
