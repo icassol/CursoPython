@@ -1,6 +1,6 @@
-# 6.2 Scripting
+# Scripting
 
-En esta sección profundizaremos en el proceso de crear scripts en Python. Esta y las próximas secciones tienen un [video](https://youtu.be/spjiuud3dQ4) asociado que podés ver antes de leer este texto.
+En esta sección profundizaremos en el proceso de crear scripts en Python. 
 
 ### ¿Qué es un script?
 
