@@ -1,7 +1,6 @@
-# 2.3 Funciones
+# Funciones
 
-A medida que tus programas se vuelven más largos y complejos, vas a necesitar organizarte. En esta sección vamos a introducir brevemente funciones y módulos de la biblioteca así como también la administración de errores y excepciones. 
-Acá hay un [video introductorio](https://youtu.be/5OOqvYhf65A) al tema de funciones, y acá [hay otro](https://youtu.be/THUdN87afwg) sobre el manejo de errores y excepciones.
+A medida que tus programas se vuelven más largos y complejos, vas a necesitar organizarte. En esta sección vamos a introducir brevemente funciones y módulos de la biblioteca. 
 
 ### Funciones a medida
 
