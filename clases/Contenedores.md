@@ -1,4 +1,4 @@
-# 2.5 Contenedores
+# Contenedores
 
 En esta sección trataremos listas, diccionarios y conjuntos.
 
