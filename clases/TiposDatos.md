@@ -180,7 +180,7 @@ Anteriormente escribiste un programa que leía el archivo
 
 A veces, además de leerlo, queremos hacer otras cosas con el archivo CSV, como por ejemplo usar los datos que contiene para hacer un cálculo. Lamentablemente una fila de datos en crudo no es suficiente para operar aritméticamente. Vamos a querer interpretar los elementos de la fila de datos de alguna manera particular, convirtiéndolos a otro tipo de datos que resulte más adecuado para trabajar. Es frecuente además de convertir los elementos de las filas, transformar las filas enteras en tuplas o diccionarios.
 
-### Ejercicio 2.11: Tuplas
+### Tuplas
 En el intérprete interactivo, creá la siguiente tupla que representa la fila de antes, pero con las columnas numéricas pasadas a formatos adecuados:
 
 ```python
@@ -254,7 +254,7 @@ Tomá las variables de arriba y empaquetalas en una tupla.
 >>>
 ```
 
-### Ejercicio 2.12: Diccionarios como estructuras de datos
+### Diccionarios como estructuras de datos
 Una alternativa a la tupla es un diccionario.
 
 ```python
@@ -296,7 +296,7 @@ A diferencia de las tuplas, los diccionarios se pueden modificar libremente. Agr
 >>>
 ```
 
-### Ejercicio 2.13: Más operaciones con diccionarios
+### Más operaciones con diccionarios
 Si usás el comando `for` para iterar sobre el diccionario, obtenés las claves:
 
 ```python
@@ -370,9 +370,8 @@ Si tenés tuplas como en `items` podés crear un diccionario usando la función 
 ```
 
 
-### Ejercicio 2.14: Diccionario geringoso.
-Construí una función que, a partir de una lista de palabras, devuelva un diccionario geringoso. Las claves del diccionario deben ser las palabras de la lista y los valores deben ser sus traducciones al geringoso (como en el [Ejercicio 1.18](../01_Introduccion/04_Strings.md#ejercicio-118-geringoso-rustico)). 
+### Diccionario geringoso.
+Construí una función que, a partir de una lista de palabras, devuelva un diccionario geringoso. Las claves del diccionario deben ser las palabras de la lista y los valores deben ser sus traducciones al geringoso. 
 Probá tu función para la lista `['banana', 'manzana', 'mandarina']`.
-Guardá este ejercicio en un archivo `diccionario_geringoso.py` para entregar al final de la clase.
 
 
