@@ -154,9 +154,7 @@ Dado que existe la lista de módulos cargados `sys.modules`, un pedido de cargar
 
 Para estos ejercicios que involucran módulos, es de suma importancia que te asegures de que estás ejecutando Python en el directorio adecuado.
 
-### Ejercicio 6.10: Importar módulos
-En el [Ejercicio 6.6](../06_Organizacion_y_Complejidad/03_Funciones.md#ejercicio-66-parsear-un-archivo-csv) creamos una función llamada `parse_csv()` para parsear el contenido de archivos de datos en formato CSV. Ahora vamos a ver cómo usar esa función en otros programas. 
-
+### Importar módulos
 Empezá por copiarte los archivos `rebotes.py` e `hipoteca.py` a la carpeta de ejercicios de esta clase. Los vamos a importar.
 
 Con el directorio de trabajo adecuado (puede que tengas que reiniciar tu intérprete para que tome efecto un cambio), intentá importar los programas que escribiste antes. Con sólo importarlos deberías ver su salida exactamente como cuando los terminaste de escribir.
@@ -213,7 +211,7 @@ Importá sólo la función para evitar escribir el nombre del módulo:
 >>>
 ```
 
-### Ejercicio 6.11: Usemos tu módulo
+### Usemos tu módulo
 Retomemos la versión de `informe_funciones.py` del [Ejercicio 6.5](../06_Organizacion_y_Complejidad/02_Scripts.md#ejercicio-65-crear-una-funcion-de-alto-nivel-para-la-ejecucion-del-programa) que produce un informe como éste:
 
 ```
@@ -234,7 +232,7 @@ Guiate por el ejemplo interactivo que dimos un poco más arriba.
 Al final, deberías obtener exactamente el mismo resultado que al principio.
 Este archivo lo vas a tener que entregar al final de la clase. Por favor comentá la línea que llama a la función `informe_camion()` de manera que tu archivo contenga solamente definiciones de funciones y lo podamos evaluar automáticamente.
 
-### Ejercicio 6.12: Un poco más allá
+### Un poco más allá
 El programa `costo_camion.py` lee, mediante una función llamada `costo_camion()` los datos de un camión y calcula su costo. La última versión que deberías tener de este archivo es la del [Ejercicio 3.9](../03_Datos/03_Secuencias.md#ejercicio-39-la-funcion-zip). Copiá el archivo `costo_camion.py` al directorio de ejercicios de la clase actual. Deberías poder importarlo y usarlo así:
 
 ```python
