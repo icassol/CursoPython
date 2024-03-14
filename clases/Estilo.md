@@ -164,9 +164,7 @@ Esto es solo un breve resumen, mirá el [PEP 8](https://www.python.org/dev/peps/
 
 ## El código no es solo leído: el código de percibe
 
-Más allá de los gustos por los diferentes estilos posibles, es importante recordar que hay una métrica que no falla nunca para evaluar la calidad de un código: _la cantidad de puteadas por minuto de un lector externo_. 
-
-![WTF](./wtf.jpg)
+Más allá de los gustos por los diferentes estilos posibles, es importante recordar que hay una métrica que no falla nunca para evaluar la calidad de un código: _cómo reacciona un programador externo a mi código_. 
 
 Las reglas de estilo pueden ser discutidas, acatadas o no, en diferentes contextos. Es importante entender que un programador enfrentado a un código en Python no solo lee el código sino que percibe su diseño en el espacio, el uso de bloques y espacios, de indentaciones y mayúsculas. El diseño gráfico del código es una parte importante de las herramientas de transmisión de la información que permite nuestro archivo.
 
