@@ -155,7 +155,7 @@ Dado que existe la lista de módulos cargados `sys.modules`, un pedido de cargar
 Para estos ejercicios que involucran módulos, es de suma importancia que te asegures de que estás ejecutando Python en el directorio adecuado.
 
 ### Importar módulos
-Empezá por copiarte los archivos `rebotes.py` e `hipoteca.py` a la carpeta de ejercicios de esta clase. Los vamos a importar.
+Empezá por copiarte los archivos `rebotes.py` e `hipoteca.py` a la carpeta `Códigos` del repositorio. Los vamos a importar.
 
 Con el directorio de trabajo adecuado (puede que tengas que reiniciar tu intérprete para que tome efecto un cambio), intentá importar los programas que escribiste antes. Con sólo importarlos deberías ver su salida exactamente como cuando los terminaste de escribir.
 
