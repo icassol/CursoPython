@@ -165,15 +165,15 @@ Anteriormente escribiste un programa que leía el archivo
 `camion.csv` usando el módulo `csv` para leer el archivo fila por fila.
 
 ```python
->>> import csv
->>> f = open('../Data/camion.csv')
->>> filas = csv.reader(f)
->>> next(filas)
-['nombre', 'cajones', 'precio']
->>> fila = next(filas)
->>> fila
-['Lima', '100', '32.2']
->>>
+import csv
+f = open('../Data/camion.csv')
+filas = csv.reader(f)
+next(filas)
+#['nombre', 'cajones', 'precio']
+fila = next(filas)
+fila
+#['Lima', '100', '32.2']
+
 ```
 
 A veces, además de leerlo, queremos hacer otras cosas con el archivo CSV, como por ejemplo usar los datos que contiene para hacer un cálculo. Lamentablemente una fila de datos en crudo no es suficiente para operar aritméticamente. Vamos a querer interpretar los elementos de la fila de datos de alguna manera particular, convirtiéndolos a otro tipo de datos que resulte más adecuado para trabajar. Es frecuente además de convertir los elementos de las filas, transformar las filas enteras en tuplas o diccionarios.
