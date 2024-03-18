@@ -161,40 +161,43 @@ s[2] # lista
 
 ## Ejercicios
 
-Anteriormente escribiste un programa que leía el archivo
+El siguiente es un programa que lee el archivo
 `camion.csv` usando el módulo `csv` para leer el archivo fila por fila.
 
 ```python
 import csv
-f = open('../Data/camion.csv')
+f = open('./Data/camion.csv')
 filas = csv.reader(f)
-next(filas)
+print(next(filas))
 #['nombre', 'cajones', 'precio']
 fila = next(filas)
-fila
+print(fila)
 #['Lima', '100', '32.2']
+
+fila = next(filas)
+print(fila)
 
 ```
 
 A veces, además de leerlo, queremos hacer otras cosas con el archivo CSV, como por ejemplo usar los datos que contiene para hacer un cálculo. Lamentablemente una fila de datos en crudo no es suficiente para operar aritméticamente. Vamos a querer interpretar los elementos de la fila de datos de alguna manera particular, convirtiéndolos a otro tipo de datos que resulte más adecuado para trabajar. Es frecuente además de convertir los elementos de las filas, transformar las filas enteras en tuplas o diccionarios.
 
 ### Tuplas
-En el intérprete interactivo, creá la siguiente tupla que representa la fila de antes, pero con las columnas numéricas pasadas a formatos adecuados:
+En tu archivo, creá la siguiente tupla que representa la fila de antes, pero con las columnas numéricas pasadas a formatos adecuados:
 
 ```python
->>> t = (fila[0], int(fila[1]), float(fila[2]))
->>> t
-('Lima', 100, 32.2)
->>>
+t = (fila[0], int(fila[1]), float(fila[2]))
+print(t)
+#('Lima', 100, 32.2)
+
 ```
 
 A partir de esta tupla, ahora podés calcular el costo total multiplicando cajones por precio:
 
 ```python
->>> cost = t[1] * t[2]
->>> cost
-3220.0000000000005
->>>
+cost = t[1] * t[2]
+print(cost)
+#3220.0000000000005
+
 ```
 
 ¿Qué pasó? ¿Qué hace ese 5 al final?
@@ -204,28 +207,28 @@ Este error no es un problema de Python, sino de la forma en la que la máquina r
 Esto pasa en todos los lenguajes de programación que usan punto flotante, pero en muchos casos estos pequeños errores quedan ocultos al imprimir. Por ejemplo:
 
 ```python
->>> print(f'{cost:0.2f}')
-3220.00
->>>
+print(f'{cost:0.2f}')
+#3220.00
+
 ```
 
 Las tuplas son de sólo lectura. Verificalo tratando de cambiar el número de cajones a 75.
 
 ```python
->>> t[1] = 75
-Traceback (most recent call last):
-    File "<stdin>", line 1, in <module>
-TypeError: 'tuple' object does not support item assignment
->>>
+t[1] = 75
+# Traceback (most recent call last):
+#    File "<stdin>", line 1, in <module>
+# TypeError: 'tuple' object does not support item assignment
+
 ```
 
 Aunque no podés cambiar al tupla, sí podés reemplazar la tupla por una nueva.
 
 ```python
->>> t = (t[0], 75, t[2])
->>> t
-('Lima', 75, 32.2)
->>>
+t = (t[0], 75, t[2])
+print(t)
+#('Lima', 75, 32.2)
+
 ```
 
 Siempre que reasignes una variable como recién lo hiciste con `t`, el valor anterior de la variable se pierde. Aunque la asignación de arriba pueda parecer como que estás modificando la tupla, en realidad estás creando una nueva tupla y tirando la vieja.
@@ -233,138 +236,138 @@ Siempre que reasignes una variable como recién lo hiciste con `t`, el valor ant
 Las tuplas muchas veces se usan para empaquetar y desempaquetar valores dentro de variables. Probá esto:
 
 ```python
->>> nombre, cajones, precio = t
->>> nombre
-'Lima'
->>> cajones
-75
->>> precio
-32.2
->>>
+nombre, cajones, precio = t
+print(nombre)
+#'Lima'
+print(cajones)
+#75
+print(precio)
+#32.2
+
 ```
 
 Tomá las variables de arriba y empaquetalas en una tupla.
 
 ```python
->>> t = (nombre, 2*cajones, precio)
->>> t
-('Lima', 150, 32.2)
->>>
+t = (nombre, 2*cajones, precio)
+print(t)
+#('Lima', 150, 32.2)
+
 ```
 
 ### Diccionarios como estructuras de datos
 Una alternativa a la tupla es un diccionario.
 
 ```python
->>> d = {
+d = {
         'nombre' : fila[0],
         'cajones' : int(fila[1]),
         'precio'  : float(fila[2])
     }
->>> d
-{'nombre': 'Lima', 'cajones': 100, 'precio': 32.2 }
->>>
+print(d)
+#{'nombre': 'Lima', 'cajones': 100, 'precio': 32.2 }
+
 ```
 
 Calculá el costo total de este lote:
 
 ```python
->>> cost = d['cajones'] * d['precio']
->>> cost
-3220.0000000000005
->>>
+cost = d['cajones'] * d['precio']
+print(cost)
+#3220.0000000000005
+
 ```
 
 Compará este ejemplo con el mismo cálculo hecho con tuplas más arriba. Cambiá el número de cajones a 75.
 
 ```python
->>> d['cajones'] = 75
->>> d
-{'nombre': 'Lima', 'cajones': 75, 'precio': 32.2 }
->>>
+d['cajones'] = 75
+print(d)
+#{'nombre': 'Lima', 'cajones': 75, 'precio': 32.2 }
+
 ```
 
 A diferencia de las tuplas, los diccionarios se pueden modificar libremente. Agregá algunos atributos:
 
 ```python
->>> d['fecha'] = (14, 8, 2020)
->>> d['cuenta'] = 12345
->>> d
+d['fecha'] = (14, 8, 2020)
+d['cuenta'] = 12345
+print(d)
 {'nombre': 'Lima', 'cajones': 75, 'precio':32.2, 'fecha': (14, 8, 2020), 'cuenta': 12345}
->>>
+
 ```
 
 ### Más operaciones con diccionarios
 Si usás el comando `for` para iterar sobre el diccionario, obtenés las claves:
 
 ```python
->>> for k in d:
-        print('k =', k)
+for k in d:
+    print('k =', k)
 
-k = nombre
-k = cajones
-k = precio
-k = fecha
-k = cuenta
->>>
+#k = nombre
+#k = cajones
+#k = precio
+#k = fecha
+#k = cuenta
+
 ```
 
 Probá esta variante:
 
 ```python
->>> for k in d:
-        print(k, '=', d[k])
+for k in d:
+    print(k, '=', d[k])
 
-nombre = 'Lima'
-cajones = 75
-precio = 32.2
-fecha = (14, 8, 2020)
-cuenta = 12345
->>>
+#nombre = 'Lima'
+#cajones = 75
+#precio = 32.2
+#fecha = (14, 8, 2020)
+#cuenta = 12345
+
 ```
 
 Una manera más elegante de trabajar con claves y valores simultáneamente es usar el método `items()`. Esto te devuelve una lista de tuplas de la forma `(clave,valor)` sobre la que podés iterar.
 
 ```python
->>> items = d.items()
->>> items
-dict_items([('nombre', 'Lima'), ('cajones', 75), ('precio', 32.2), ('fecha', (14, 8, 2020))])
->>> for k, v in d.items():
-        print(k, '=', v)
+items = d.items()
+print(items)
+#dict_items([('nombre', 'Lima'), ('cajones', 75), ('precio', 32.2), ('fecha', (14, 8, 2020))])
+for k, v in d.items():
+    print(k, '=', v)
 
-nombre = Lima
-cajones = 75
-precio = 32.2
-fecha = (14, 8, 2020)
->>>
+#nombre = Lima
+#cajones = 75
+#precio = 32.2
+#fecha = (14, 8, 2020)
+
 ```
 
 Si pasás un diccionario a una lista, obtenés sus claves.
 
 ```python
->>> list(d)
-['nombre', 'cajones', 'precio', 'fecha', 'cuenta']
->>>
+print(list(d))
+#['nombre', 'cajones', 'precio', 'fecha', 'cuenta']
+
 ```
 
 También podés obtener todas las claves del diccionario usando el método `keys()`:
 
 ```python
->>> claves = d.keys()
->>> claves
+claves = d.keys()
+print(claves)
 dict_keys(['nombre', 'cajones', 'precio', 'fecha', 'cuenta'])
->>>
+
 ```
 
 Si tenés tuplas como en `items` podés crear un diccionario usando la función `dict()`. Probá esto:
 
 ```python
->>> nuevos_items = [('nombre', 'Manzanas'), ('cajones', 100), ('precio', 490.1), ('fecha', (13, 8, 2020))]
->>> nuevos_items
-[('nombre', 'Manzanas'), ('cajones', 100), ('precio', 490.1), ('fecha', (13, 8, 2020))]
->>> d = dict(nuevos_items)
->>> d
-{'nombre': 'Manzanas', 'cajones': 100, 'precio': 490.1, 'fecha': (13, 8, 2020)}
+nuevos_items = [('nombre', 'Manzanas'), ('cajones', 100), ('precio', 490.1), ('fecha', (13, 8, 2020))]
+print(nuevos_items)
+#[('nombre', 'Manzanas'), ('cajones', 100), ('precio', 490.1), ('fecha', (13, 8, 2020))]
+d = dict(nuevos_items)
+print(d)
+#{'nombre': 'Manzanas', 'cajones': 100, 'precio': 490.1, 'fecha': (13, 8, 2020)}
 ```
 
 
