@@ -118,7 +118,7 @@ Alternativamente, esa excepción puede ser atrapada por un bloque `try-except`, 
 
 ## Ejercicios
 
-### Ejercicio 2.5: Definir una función
+### Ejercicio: Definir una función
 Probá primero definir una función simple:
 
 ```python
@@ -135,7 +135,7 @@ Hola Paula
 
 Si la primera instrucción de una función es una cadena, sirve como documentación de la función. Probalo escribiendo `help(saludar)` para ver cómo la muestra.
 
-### Ejercicio 2.6: Transformar un script en una función
+### Ejercicio: Transformar un script en una función
 Transformá el programa `costo_camion.py`  (que escribiste en el [Ejercicio 2.2](../02_Estructuras_y_Funciones/02_Archivos.md#ejercicio-22-lectura-de-un-archivo-de-datos) de la sección anterior) en una función `costo_camion(nombre_archivo)`.  Esta función recibe un nombre de archivo como entrada, lee la información sobre los cajones que cargó el camión y devuelve el costo de la carga de frutas como una variable de punto flotante.
 
 Para usar tu función, cambiá el programa de forma que se parezca a esto:
@@ -167,7 +167,7 @@ Esto va a ejecutar el código en el programa y dejar abierto el intérprete inte
 Es útil para testear y debuguear poder interactuar interactivamente con tu código.
 
 
-### Ejercicio 2.7: Buscar precios
+### Ejercicio: Buscar precios
 A partir de lo que hiciste en el [Ejercicio 2.3](../02_Estructuras_y_Funciones/02_Archivos.md#ejercicio-23-precio-de-la-naranja), escribí una función `buscar_precio(fruta)` que busque en archivo `../Data/precios.csv` el precio de determinada fruta (o verdura) y lo imprima en pantalla. Si la fruta no figura en el listado de precios, debe imprimir un mensaje que lo indique.
 
 
