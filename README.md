@@ -17,9 +17,11 @@ El objetivo de este curso es enseñar los fundamentos del lenguaje
 Python y algunos conceptos del diseño de algoritmos. El curso está orientado al manejo de datos, a la escritura de scripts y a una organización adecuada de los programas. Estudiaremos un poco de teoría de algoritmos, incluyendo conceptos básicos de la teoría de la complejidad y algunas estructuras de datos no triviales. Introduciremos la programación orientada a objetos. Al final de este curso les estudiantes deberían poder escribir sus propios programas en Python así como entender y modificar programas escritos por otres.
 
 ## Requerimientos
-Para hacer este curso solo hace falta tener instalado el Python 3.6
+Para hacer este curso hace falta tener instalado el Python 3.6
 (o uno más nuevo). Pedimos tener alguna experiencia previa programando,
 aunque sea poca. Este no es un curso de introducción a la informática/programación.
+
+En este repositorio encontrarás una archivo "Data.zip". Se recomienda crear una carpeta llamada "Curso Python" y extraer "Data.zip" dentro de la esta. Para cada clase deberás crear un archivo de tipo ".py" en la carpeta "Curso Python" y en este archivo porbar los códigos de las clases. Se recomineda seguir este esquema por el path en los programas de ejemplo.
 
 ## Contenidos
 
